@@ -25,7 +25,7 @@ public class Main extends Canvas implements Runnable {
 
         mouseInput = new MouseInput(game);
         this.addMouseWheelListener(mouseInput);
-        this.addMouseMotionListener(mouseInput);
+//        this.addMouseMotionListener(mouseInput);
 
         new Window("3D Engine", WIDTH, HEIGHT, this);
     }

@@ -20,17 +20,18 @@ public class MouseInput extends MouseAdapter {
     @Override
     public void mouseWheelMoved(MouseWheelEvent e) {
         dist = (double) e.getWheelRotation() / 100;
-    }
-
-    @Override
-    public void mouseMoved(MouseEvent e) {
-        if (e.getY() > Main.HEIGHT/2){
-            angle = 0.01;
-        } else {
-            angle = -0.01;
-        }
         ticks = 0;
     }
+
+//    @Override
+//    public void mouseMoved(MouseEvent e) {
+//        if (e.getY() > Main.HEIGHT/2){
+//            angle = 0.01;
+//        } else {
+//            angle = -0.01;
+//        }
+//        ticks = 0;
+//    }
 
     public void tick(){
         if (ticks < 10){
